@@ -25,3 +25,30 @@ https://www.bing.com/search?q=how+to+install+virtual+box+guest+edition+iso+for+w
 
 https://www.configserverfirewall.com/windows-10/virtualbox-guest-additions-windows-10/
 
+
+
+Open Start, type: CMD
+Right click CMD
+Click Run as administrator
+
+Type in at the prompt OR Copy and Paste these one at a time : (Hit enter after each)
+
+Dism /Online /Cleanup-Image /CheckHealth
+
+Dism /Online /Cleanup-Image /ScanHealth
+
+Dism /Online /Cleanup-Image /RestoreHealth
+
+Also run the System File Checker utility:
+Open Start, type: CMD
+Right click CMD
+Click Run as administrator
+
+At the Command Prompt, type: sfc/scannow
+
+This will check for any integrity violations
+
+Restart your system
+
+Check if its working again.
+
